@@ -2084,21 +2084,7 @@ var getLastConnector = function getLastConnector() {
   return (_localStorage5 = localStorage) == null ? void 0 : _localStorage5.getItem(CONNECTOR_KEY);
 };
 
-const img = require('./Cipher.png');
-
-const img$1 = require('./Fortmatic.svg');
-
-const img$2 = require('./Frame.png');
-
-const img$3 = require('./Metamask.png');
-
-const img$4 = require('./Portis.svg');
-
-const img$5 = require('./Status.png');
-
-const img$6 = require('./wallet.svg');
-
-const img$7 = require('./walletconnect.png');
+var BASE_URL = 'https://storageapi.fleek.co/aragonone-team-bucket/wallet-icons';
 
 function isElectron() {
   // See https://github.com/electron/electron/issues/2288
@@ -2110,7 +2096,7 @@ var PROVIDERS = /*#__PURE__*/new Map( /*#__PURE__*/[{
   id: 'frame',
   name: 'Frame',
   type: 'Desktop',
-  image: img$2,
+  image: BASE_URL + "/Frame.png",
   strings: {
     'your Ethereum wallet': 'Frame'
   }
@@ -2118,7 +2104,7 @@ var PROVIDERS = /*#__PURE__*/new Map( /*#__PURE__*/[{
   id: 'metamask',
   name: 'Metamask',
   type: 'Desktop',
-  image: img$3,
+  image: BASE_URL + "/Metamask.png",
   strings: {
     'your Ethereum wallet': 'Metamask'
   }
@@ -2126,7 +2112,7 @@ var PROVIDERS = /*#__PURE__*/new Map( /*#__PURE__*/[{
   id: 'status',
   name: 'Status',
   type: 'Mobile',
-  image: img$5,
+  image: BASE_URL + "/Status.png",
   strings: {
     'your Ethereum wallet': 'Status'
   }
@@ -2134,7 +2120,7 @@ var PROVIDERS = /*#__PURE__*/new Map( /*#__PURE__*/[{
   id: 'cipher',
   name: 'Cipher',
   type: 'Mobile',
-  image: img,
+  image: BASE_URL + "/Cipher.png",
   strings: {
     'your Ethereum wallet': 'Cipher'
   }
@@ -2142,7 +2128,7 @@ var PROVIDERS = /*#__PURE__*/new Map( /*#__PURE__*/[{
   id: 'fortmatic',
   name: 'Fortmatic',
   type: 'Any',
-  image: img$1,
+  image: BASE_URL + "/Fortmatic.svg",
   strings: {
     'your Ethereum wallet': 'Fortmatic'
   }
@@ -2150,7 +2136,7 @@ var PROVIDERS = /*#__PURE__*/new Map( /*#__PURE__*/[{
   id: 'portis',
   name: 'Portis',
   type: 'Any',
-  image: img$4,
+  image: BASE_URL + "/Portis.svg",
   strings: {
     'your Ethereum wallet': 'Portis'
   }
@@ -2158,7 +2144,7 @@ var PROVIDERS = /*#__PURE__*/new Map( /*#__PURE__*/[{
   id: 'walletconnect',
   name: 'WalletConnect',
   type: 'Any',
-  image: img$7,
+  image: BASE_URL + "/walletconnect.png",
   strings: {
     'your Ethereum wallet': 'WalletConnect'
   }
@@ -2166,7 +2152,7 @@ var PROVIDERS = /*#__PURE__*/new Map( /*#__PURE__*/[{
   id: 'unknown',
   name: 'Unknown',
   type: 'Desktop',
-  image: img$6,
+  image: BASE_URL + "/wallet.svg",
   strings: {
     'your Ethereum wallet': 'your wallet'
   }
